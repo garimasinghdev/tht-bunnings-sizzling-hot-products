@@ -14,7 +14,10 @@ Write a program which finds the top product based on the following rules:
 * If multiple products have equal sales, select alphabetically
   first only
 
-Sample Input: [orders.json](inputs/orders.json)
+Sample Input Files
+
+* Orders: [orders.json](inputs/orders.json)
+* Product Details: [products.json](inputs/products.json)
 
 The expected output for the above input is as below:
 
