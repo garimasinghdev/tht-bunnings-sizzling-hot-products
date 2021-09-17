@@ -1,6 +1,6 @@
 # Bunnings Sizzling-Hot Products
 
-*_This is Work in progress_*
+[*_This is Work in progress_*]
 
 Bunnings will be launching a new page to allow customers to see the list of sizzling-hot products.  We want you to write the business logic to determine which products to display
 
