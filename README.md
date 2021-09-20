@@ -33,9 +33,10 @@ Last 3 Days: "Ezy Storage 37L Flexi Laundry Basket - White"
 * Application should be able to accept above data as json files from input
   folder 🗂️
 * We encourage you to provide a well unit-tested code 🧪
-* We encourage you to consider design patterns and S.O.L.I.D principles.
+* We encourage you to consider design patterns and S.O.L.I.D principles. 🧱
   > We understand if you prefer functional programming over OOP. The above
   > recommendation only applies for folks attempting the test in OOP paradigm.
+  > 🌱
 * We recommend not spending more than 2-3 hours ⌚
 * The code you produce can be in any language ⭐
 * The output of the efforts must be committed back into a Repo in Github, and
