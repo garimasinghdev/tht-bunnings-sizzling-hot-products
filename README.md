@@ -28,6 +28,8 @@ The expected output for the above input is as below:
 Last 3 Days: "Ezy Storage 37L Flexi Laundry Basket - White"
 ```
 
+Consider other inputs and edge cases, not just the supplied input.
+
 ## Deliverables
 
 * Application should be able to accept above data as json files from input
