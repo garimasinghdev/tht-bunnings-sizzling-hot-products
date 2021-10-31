@@ -36,7 +36,7 @@ Consider other inputs and edge cases, not just the supplied input.
   folder 🗂️
 * We encourage you to provide a well unit-tested code 🧪
 * We encourage you to consider design patterns and S.O.L.I.D principles
-* We recommend not spending more than 2-3 hours ⌚
+* We recommend not spending more than half-a-day ⌚
 * The code you produce can be in any language ⭐
 * The output of the efforts must be committed back into a Repo in Github, and
   the URL shared back for review. The Github repo must be accessible ❗
