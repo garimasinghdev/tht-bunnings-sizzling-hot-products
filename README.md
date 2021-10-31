@@ -2,17 +2,20 @@
 
 [*_This is Work in progress_*]
 
-Bunnings will be launching a new page to allow customers to see the list of sizzling-hot products.  We want you to write the business logic to determine which products to display
+Bunnings will be launching a new page to allow customers to see the list of
+sizzling-hot products. We want you to write the business logic to determine
+which products to display
 
 * Top product per day
 * Top product for last 3 days - **Assume today's date is 21/07/2021**
 
 Write a program which finds the top product based on the following rules:
 
-* Multiple orders of the same product for the same customer on the same day are **not** considered
+* Multiple orders of the same product for the same customer on the same day are
+  **not** considered
 * Cancelled orders should not be accounted
-* If multiple products have equal sales, select alphabetically
-  first only e.g. If a "Hammer" and "BBQ" had similar sales you choose "BBQ" 
+* If multiple products have equal sales, select alphabetically first only. 
+  Example If a "Hammer" and "BBQ" had similar sales you choose "BBQ"
 
 Sample Input Files
 
@@ -32,8 +35,7 @@ Consider other inputs and edge cases, not just the supplied input.
 
 ## Deliverables
 
-* Application should be able to accept above data as json files from input
-  folder 🗂️
+* Application should be able to accept above data as json files from input folder 🗂️
 * We encourage you to provide a well unit-tested code 🧪
 * We encourage you to consider design patterns and S.O.L.I.D principles
 * We recommend not spending more than half-a-day ⌚
