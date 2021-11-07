@@ -1,4 +1,4 @@
-# Bunnings Sizzling-Hot Products
+# 🔨🔨 Bunnings Sizzling-Hot 🔥 Products
 
 [*_This is Work in progress_*]
 
