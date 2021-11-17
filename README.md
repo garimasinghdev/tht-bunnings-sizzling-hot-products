@@ -13,7 +13,7 @@ Write a program which finds the top product based on the following rules:
 
 * Multiple orders of the same product for the same customer on the same day are
   **not** considered
-* Cancelled orders should not be accounted
+* For orders that are cancelled do not account the original completed order towards the calculations.
 * If multiple products have equal sales, select alphabetically first only. 
   Example If a "Hammer" and "BBQ" had similar sales you choose "BBQ"
 
