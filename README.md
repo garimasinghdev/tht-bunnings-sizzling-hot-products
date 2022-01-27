@@ -26,7 +26,7 @@ The expected output for the above input is as below:
 
 ```text
 19/07/2021: "Ezy Storage 37L Flexi Laundry Basket - White"
-20/07/2021: "Ozito 80W Soldering Iron"
+20/07/2021: "Ezy Storage 37L Flexi Laundry Basket - White"
 21/07/2021: "Arlec 160W Crystalline Solar Foldable Charging Kit"
 Last 3 Days: "Ezy Storage 37L Flexi Laundry Basket - White"
 ```
