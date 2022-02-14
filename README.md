@@ -11,11 +11,64 @@ which products to display
 
 Write a program which finds the top product based on the following rules:
 
-* Multiple orders of the same product for the same customer on the same day are
-  **not** considered
-* For orders that are cancelled do not account the original completed order towards the calculations.
-* If multiple products have equal sales, select alphabetically first only. 
-  Example If a "Hammer" and "BBQ" had similar sales you choose "BBQ"
+* When accounting for sales of a product on a day or for a given period, we
+  only tally a single sale per order.
+  ```json
+  // For example, If a customer buys some hammers in a single orders as
+  // represented by the json below when consolidating the sales you
+  // consider this as a single sales.
+  [
+    {
+      "orderId": "O10",
+      "customerId": "C1",
+      "entries": [{ "id": "P1", "quantity": 2 }],
+      "date": "19/07/2021",
+      "status": "completed"
+    }
+  ]
+  ```
+* Multiple orders of the same product by the same customer on the same day are
+  **not** considered.
+  ```json
+  // For example, If a customer buys some hammers in 2 separate orders on the
+  // same day as represented by the json below when consolidating the sales you
+  // consider this as a single sales.
+  [
+    {
+      "orderId": "O10",
+      "customerId": "C1",
+      "entries": [{ "id": "P1", "quantity": 2 }],
+      "date": "19/07/2021",
+      "status": "completed"
+    }, {
+      "orderId": "O11",
+      "customerId": "C1",
+      "entries": [{ "id": "P1", "quantity": 3 }],
+      "date": "19/07/2021",
+      "status": "completed"
+    }
+  ]
+  ```
+* For orders that are cancelled do not account the original completed order
+  towards the calculations.
+    ```json
+  // For example, If a customer has placed an order on 19th and then cancelled
+  // it the next day then we do not account order O10 towards the sales.
+  [
+    {
+      "orderId": "O10",
+      "customerId": "C1",
+      "entries": [...],
+      "date": "19/07/2021",
+      "status": "completed"
+    }, {
+      "orderId": "O11",
+      "date": "20/07/2021",
+      "status": "cancelled"
+    }
+  ]
+* If multiple products have equal sales, select alphabetically first only.
+  > Example If a "Hammer" and "BBQ" had similar sales you choose "BBQ"
 
 Sample Input Files
 
@@ -35,7 +88,8 @@ Consider other inputs and edge cases, not just the supplied input.
 
 ## Deliverables
 
-* Application should be able to accept above data as json files from input folder 🗂️
+* Application should be able to accept above data as json files from input
+  folder 🗂️
 * We encourage you to provide a well unit-tested code 🧪
 * We encourage you to consider design patterns and S.O.L.I.D principles. 🧱
   > We understand if you prefer functional programming over OOP. The above
