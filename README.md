@@ -13,10 +13,10 @@ Write a program which finds the top product based on the following rules:
 
 * When accounting for sales of a product on a day or for a given period, we
   only tally a single sale per order.
+  > For example, If a customer buys some hammers in a single orders as
+  > represented by the json below when consolidating the sales you
+  > consider this as a single sales.
   ```json
-  // For example, If a customer buys some hammers in a single orders as
-  // represented by the json below when consolidating the sales you
-  // consider this as a single sales.
   [
     {
       "orderId": "O10",
@@ -29,10 +29,10 @@ Write a program which finds the top product based on the following rules:
   ```
 * Multiple orders of the same product by the same customer on the same day are
   **not** considered.
+  > For example, If a customer buys some hammers in 2 separate orders on the
+  > same day as represented by the json below when consolidating the sales you
+  > consider this as a single sales.
   ```json
-  // For example, If a customer buys some hammers in 2 separate orders on the
-  // same day as represented by the json below when consolidating the sales you
-  // consider this as a single sales.
   [
     {
       "orderId": "O10",
@@ -51,9 +51,10 @@ Write a program which finds the top product based on the following rules:
   ```
 * For orders that are cancelled do not account the original completed order
   towards the calculations.
-    ```json
-  // For example, If a customer has placed an order on 19th and then cancelled
-  // it the next day then we do not account order O10 towards the sales.
+  > For example, If a customer has placed an order on 19th and then cancelled
+  > the order on the next day then we do not account order O10 towards the 
+  > sales.
+  ```json
   [
     {
       "orderId": "O10",
@@ -67,6 +68,7 @@ Write a program which finds the top product based on the following rules:
       "status": "cancelled"
     }
   ]
+  ```
 * If multiple products have equal sales, select alphabetically first only.
   > Example If a "Hammer" and "BBQ" had similar sales you choose "BBQ"
 
